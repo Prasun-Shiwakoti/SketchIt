@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgba(111, 101, 204, 0.719);
+}
+
+.spacing{
+    margin: 10px 5px;
+    padding: 5px;
+}
+
+
+header{
+    width: 1245px;
+    height: 100px;
+    margin: 0px auto;
+
+}
+.sketchit{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+}
+.gamename .sketchit h1{
+    font-size: 90px;
+    text-align: center;
+    font-family: cursive;
+    margin: -30px  0px;
+}
+
+
+.midbody{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.description{
+    border: 2px solid black;
+    height: 358px;
+    width: 300px;
+    min-width: 300px;
+    font-family: 'Segoe UI';
+    border-radius: 10px;
+    background-color:#BAFFAA;
+}
+.description h3{
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+}
+
+.options{
+    height: fit-content;
+    border: 2px solid black;
+    width: 600px;
+    min-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 168, 168, 0.699);
+}
+.spacefiller{
+    border: 2px solid black;
+    height: 130px;
+    background-color: #fff;
+}
+.options .proceed_btns{
+    height: 60px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+    color: black;
+    font-size: 17px;
+}
+.options .proceed_btns:hover {
+    background-color: rgb(223, 223, 223);
+    opacity: 1;
+}
+.options input[type = "text"]{
+    height: 30px;
+    width: 400px;
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.join_game_extend{
+    display: flex;
+}
+.join_game_extend .proceed_btns{
+    height:44px;
+}
+
+.update_logs{
+    height: 358px;
+    border: 2px solid black;
+    width: 300px;
+    min-width: 300px;
+    font-family: 'Segoe UI';
+    border-radius: 10px;
+    background-color: #BAFFAA;
+}
+.update_logs h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+
+footer{
+
+    display: flex;
+    width: max-content;
+    height: 70px;
+}
+footer p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+}
+footer button {
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    width: 50px;
+    background: #ffffff;
+}
+footer button img{
+    margin: -5px;
+}
+
+footer .suggestionsBox{
+    background-color: rgb(243, 215, 178);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 170px;
+    height: fit-content;
+    padding: 5px;
+    text-align: center;
+    width: 925px;
+}
+footer .suggestionsBox p{
+    margin-bottom: 5px;
+    font-family: cursive;
+}
+footer .suggestionsBox #suggestionsInput{
+    height: 50px;
+    width: 90%;
+    padding: 1px 0px 1px 5px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+}
+footer .suggestionsBox #submitSuggestions{
+    height: 56px;
+    width: 60px;
+    padding-top: 4px;
+    margin-left: -4px;
+    border: 2px solid black;
+    border-left: none;
+    border-radius: 0px 5px 5px 0px;
+}

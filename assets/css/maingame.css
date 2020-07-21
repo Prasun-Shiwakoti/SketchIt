@@ -1,0 +1,205 @@
+/* remove pre designs */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: linear-gradient(45deg, #8730ee, #d6c0efdb);
+}
+
+/* diciding body to grid  */
+.body{
+    display: grid;
+    grid-template-rows: 10% 95%;
+    
+}
+
+
+header{
+    width: 1255px;
+    padding: 10px 20px;
+    padding-right: 0px;
+    font-family: cursive;
+    display: flex;
+}  
+header .game_name{
+    width: 270px;
+    margin: 0px;
+}
+header .game_name a{
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(39, 214, 170);
+}
+
+header .game_name p{
+    display: inline;
+    font-size: 20px;
+    position: relative;
+    left: -10px;
+}
+header .gamehead{
+    width: 600px;
+}
+header .gamehead .timer{
+    float: left;
+    margin: 5px;
+    font-size: 30px;
+}
+header .gamehead .rounds{
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 20px;
+    display: inline-block;
+}
+header .gamehead #liveusername{
+    display: none;
+}
+header .blank_word{
+    float: right;
+    margin-top: 7px;
+}
+
+
+.mainbody{
+    width: 1275px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 270px 670px 335px;
+}
+
+.leftside{
+    height: 570px;
+    border: 2px solid black;
+    background: linear-gradient(45deg, #0decb4, #1560e9a8);
+}
+.options{
+    margin-left: 10px;
+    padding : 5px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.options button{
+    padding: 15px;
+    margin: 10px 5px 0px 5px;
+    border: none;
+    cursor: pointer; 
+}
+.options #clear{
+    background: url('/static/images/clear.png') no-repeat center center/cover ;
+    border: none;
+}
+.options #eraser{
+    background: url('/static/images/eraser.png') no-repeat center center/cover ;
+}
+.options #pen{
+    background: url('/static/images/pen.png') no-repeat center center/cover ;
+}
+.options #slider{
+    -webkit-appearance: none;
+    position: relative;
+    top: 10px;
+    height: 15px;
+    width: 100%;
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+.players{
+    background: yellow;
+    padding: 20px;
+    margin: 24px 10px;
+    border: 2px solid black;
+}
+.players p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.players .leaders{
+    background: cyan;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    border: 2px solid black;
+    margin: 5px -10px;
+    padding: 10px 0px 0px 15px;
+}
+
+.mid_body{
+    display: grid;
+    grid-template-rows: 90% 10%;
+}
+#canvas{
+    margin: 0px auto;
+    border: 2px solid black;
+    cursor: crosshair;
+    background: white;
+}
+
+.chat{
+    border: 2px solid black;
+    display: grid;
+    margin-right: 10px;
+    grid-template-rows: 90% 10%;
+    height: 570px;
+    background: white;
+}
+.show_chat{
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: scroll;
+}
+.show_chat .actual_chat{
+    height: 30px;
+    min-height: 30px;
+    margin: 2.5px 0px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.show_chat .right_guess{
+    background-color: #9cf8c5;
+}
+.show_chat .wrong_guess{
+    background-color: #e0e0e0;
+}
+.show_chat .system_chat{
+    background: #fdff7c;
+    font-size: 20px;
+    text-align: center;
+}
+.chat input{
+    margin:5px 0px;
+    padding: 10px;
+}
+
+
+.allplayers{
+    background: bisque;
+    margin: 10px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    text-align: center;
+    border: 2px solid black;
+    width: 1250;
+}
+.allplayers h3{
+    font-family: cursive;
+    font-size: 30px;
+}
+.allplayers .non_leaders_list{
+    
+    font-family: cursive;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.allplayers .non_leaders_list div{
+    background-color: white;
+    margin: 15px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: left;
+    padding: 5px;
+}
